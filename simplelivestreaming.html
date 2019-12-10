@@ -51,6 +51,7 @@
       console.log('EVENT FIRED: onClose'); 
       $('#mystart').prop( "disabled", false ); 
       $('#mystop').prop( "disabled", true ); 
+      document.querySelector('#localVideo').srcObject=null;
       remon.close();
       remon = new Remon({ config, listener });
     },
