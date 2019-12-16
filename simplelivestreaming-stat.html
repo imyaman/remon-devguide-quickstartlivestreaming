@@ -58,8 +58,7 @@
       remon = new Remon({ config, listener });
     },
     onStat(result){
-      const stat = `State: l.cand: ${result.localCandidate} /r.cand: ${result.remoteCandidate} /l.res: ${result.localFrameWidth} x ${result.localFrameHeight} /r.res: ${result.remoteFrameWidth} ${result.remoteFrameHeight} /l.rate: ${result.localFrameRate} /r.rate: ${result.remoteFrameRate} / Health: ${result.rating}`
-      console.log(stat)
+      console.log(`Stat: ${result}`)
     },
     onError(error) {
       console.log(`error : ${error}`);
