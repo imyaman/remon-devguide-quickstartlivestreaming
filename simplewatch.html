@@ -60,7 +60,9 @@
       remon = new Remon({ config, listener });
     },
     onError(error) { console.log(`EVENT FIRED: onError: ${error}`); },
-    onStat(result) { console.log(`EVENT FIRED: onStat: ${result}`); }
+    onStat(result) { 
+      console.log(`Stat: ${result}`); 
+    }
   };
 
   remon = new Remon({ config, listener });
